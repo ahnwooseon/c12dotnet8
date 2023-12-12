@@ -1,0 +1,4 @@
+{
+    "dotnet.inlayHints.enableInlayHintsForLiteralParameters": true,
+    "dotnet.inlayHints.enableInlayHintsForParameters": true
+}
