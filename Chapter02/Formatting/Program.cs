@@ -35,3 +35,11 @@ Console.WriteLine();
 Console.WriteLine(format: "{0,-10} {1,6}", arg0: "Name", arg1: "Count");
 Console.WriteLine(format: "{0,-10} {1,6:N0}", arg0: applesText, arg1: applesCount);
 Console.WriteLine(format: "{0,-10} {1,6:N0}", arg0: bananasText, arg1: bananasCount);
+
+Console.Write("Type your first name and press ENTER: ");
+string? firstName = Console.ReadLine();
+
+Console.Write("Type your age and press ENTER: ");
+string age = Console.ReadLine()!;
+
+Console.WriteLine($"Hello {firstName}, you look good for {age}.");
