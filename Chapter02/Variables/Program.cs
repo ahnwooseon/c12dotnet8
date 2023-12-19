@@ -1,12 +1,13 @@
 ﻿using System.Xml; // To use XmlDocument.
+using static System.Console;
 
 object height = 1.88; // Storing a double in an object.
 object name = "Amir"; // Storing a string in an object.
-Console.WriteLine($"{name} is {height} metres tall.");
+WriteLine($"{name} is {height} metres tall.");
 
 // int length1 = name.Length; // This gives a compile error!
 int length2 = ((string)name).Length; // Cast name to a string.
-Console.WriteLine($"{name} has {length2} characters.");
+WriteLine($"{name} has {length2} characters.");
 
 dynamic something;
 
@@ -23,10 +24,10 @@ something = new[] { 3, 5, 7 };
 // something = "Ahmed";
 
 // This compiles but might throw an exception at run-time.
-Console.WriteLine($"The length of something is {something.Length}");
+WriteLine($"The length of something is {something.Length}");
 
 // Output the type of the something variable.
-Console.WriteLine($"something is a {something.GetType()}");
+WriteLine($"something is a {something.GetType()}");
 
 var population = 67_000_000; // 67 million in UK.
 var weight = 1.88; // in kilograms.
@@ -46,12 +47,12 @@ XmlDocument xml2 = new XmlDocument(); // Works with all C# versions.
 var file1 = File.CreateText("something1.txt");
 StreamWriter file2 = File.CreateText("something2.txt");
 
-Console.WriteLine($"default(int) = {default(int)}");
-Console.WriteLine($"default(bool) = {default(bool)}");
-Console.WriteLine($"default(DateTime) = {default(DateTime)}");
-Console.WriteLine($"default(string) = {default(string)}");
+WriteLine($"default(int) = {default(int)}");
+WriteLine($"default(bool) = {default(bool)}");
+WriteLine($"default(DateTime) = {default(DateTime)}");
+WriteLine($"default(string) = {default(string)}");
 
 int number = 13;
-Console.WriteLine($"number set to: {number}");
+WriteLine($"number set to: {number}");
 number = default;
-Console.WriteLine($"number reset to its default: {number}");
+WriteLine($"number reset to its default: {number}");
