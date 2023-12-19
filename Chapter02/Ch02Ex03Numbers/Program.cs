@@ -1,2 +1,22 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿Console.WriteLine("""
+-------------------------------------------------------------------------------------------
+Type    Byte(s) of memory                       Min                                     Max
+-------------------------------------------------------------------------------------------
+""");
+Console.WriteLine($"{"sbyte",-8}{sizeof(sbyte),-3}{sbyte.MinValue,40}{sbyte.MaxValue,40}");
+Console.WriteLine($"{"byte",-8}{sizeof(byte),-3}{byte.MinValue,40}{byte.MaxValue,40}");
+Console.WriteLine($"{"short",-8}{sizeof(short),-3}{short.MinValue,40}{short.MaxValue,40}");
+Console.WriteLine($"{"ushort",-8}{sizeof(ushort),-3}{ushort.MinValue,40}{ushort.MaxValue,40}");
+Console.WriteLine($"{"int",-8}{sizeof(int),-3}{int.MinValue,40}{int.MaxValue,40}");
+Console.WriteLine($"{"uint",-8}{sizeof(uint),-3}{uint.MinValue,40}{uint.MaxValue,40}");
+Console.WriteLine($"{"long",-8}{sizeof(long),-3}{long.MinValue,40}{long.MaxValue,40}");
+Console.WriteLine($"{"ulong",-8}{sizeof(ulong),-3}{ulong.MinValue,40}{ulong.MaxValue,40}");
+unsafe
+{
+    Console.WriteLine($"{"Int128",-8}{sizeof(Int128),-3}{Int128.MinValue,40}{Int128.MaxValue,40}");
+    Console.WriteLine($"{"UInt128",-8}{sizeof(UInt128),-3}{UInt128.MinValue,40}{UInt128.MaxValue,40}");
+    Console.WriteLine($"{"Half",-8}{sizeof(Half),-3}{Half.MinValue,40}{Half.MaxValue,40}");
+}
+Console.WriteLine($"{"float",-8}{sizeof(float),-3}{float.MinValue,40}{float.MaxValue,40}");
+Console.WriteLine($"{"double",-8}{sizeof(double),-3}{double.MinValue,40}{double.MaxValue,40}");
+Console.WriteLine($"{"decimal",-8}{sizeof(decimal),-3}{decimal.MinValue,40}{decimal.MaxValue,40}");
