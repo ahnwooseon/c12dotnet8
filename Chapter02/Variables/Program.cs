@@ -1,5 +1,4 @@
 ﻿using System.Xml; // To use XmlDocument.
-using static System.Console;
 
 object height = 1.88; // Storing a double in an object.
 object name = "Amir"; // Storing a string in an object.
