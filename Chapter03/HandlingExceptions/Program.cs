@@ -37,3 +37,22 @@ catch (FormatException)
 {
     WriteLine("Amounts must only contain digits!");
 }
+
+checked
+{
+    try
+    {
+        int x = int.MaxValue - 1;
+        WriteLine($"Initial value: {x}");
+        x++;
+        WriteLine($"After incrementing: {x}");
+        x++;
+        WriteLine($"After incrementing: {x}");
+        x++;
+        WriteLine($"After incrementing: {x}");
+    }
+    catch (OverflowException)
+    {
+        WriteLine("The code overflowed but I caught the exception.");
+    }
+}
