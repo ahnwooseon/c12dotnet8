@@ -9,4 +9,6 @@
 // WriteLine($"You must pay {CalculateTax(amount: 149,
 // twoLetterRegionCode: "FR"):C} in tax.");
 
-RunCardinalToOrdinal();
+// RunCardinalToOrdinal();
+
+RunFactorial();
