@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalculatorLib", "Calculator
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalculatorLib.UnitTests", "CalculatorLib.UnitTests\CalculatorLib.UnitTests.csproj", "{494CC59D-9C64-4064-8145-04EE9DBB922E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CallStackExceptionHandlingLib", "CallStackExceptionHandlingLib\CallStackExceptionHandlingLib.csproj", "{5AA910C2-2713-442D-8CCC-A5D88B9FED08}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -54,5 +56,9 @@ Global
 		{494CC59D-9C64-4064-8145-04EE9DBB922E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{494CC59D-9C64-4064-8145-04EE9DBB922E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{494CC59D-9C64-4064-8145-04EE9DBB922E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5AA910C2-2713-442D-8CCC-A5D88B9FED08}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5AA910C2-2713-442D-8CCC-A5D88B9FED08}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5AA910C2-2713-442D-8CCC-A5D88B9FED08}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5AA910C2-2713-442D-8CCC-A5D88B9FED08}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
