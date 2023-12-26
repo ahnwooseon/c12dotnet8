@@ -79,3 +79,5 @@ gerrierAccount.Balance = 98;
 WriteLine(format: "{0} earned {1:C} interest.",
     gerrierAccount.AccountName,
     gerrierAccount.Balance * BankAccount.InterestRate);
+
+WriteLine($"{bob.Name} is a {Person.Species}");

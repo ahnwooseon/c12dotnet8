@@ -5,6 +5,9 @@ public class Person : object
 {
     #region Fields: Data or state for this person.
 
+    // Constant fields: Values that are fixed at compilation.
+    public const string Species = "Homo Sapiens";
+
     public string? Name; // ? means it can be null.
     public DateTimeOffset Born;
     public WondersOfTheAncientWorld FavoriteAncientWonder;
