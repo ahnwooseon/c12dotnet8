@@ -37,3 +37,11 @@ WriteLine(format: "{0}'s favorite wonder is {1}. Its integer is {2}.",
     bob.Name,
     bob.FavoriteAncientWonder,
     (int)bob.FavoriteAncientWonder);
+
+bob.BucketList =
+    WondersOfTheAncientWorld.HangingGardensOfBabylon
+    | WondersOfTheAncientWorld.MausoleumAtHalicarnassus;
+
+// bob.BucketList = (WondersOfTheAncientWorld)18;
+
+WriteLine($"{bob.Name}'s bucket list is {bob.BucketList}.");
