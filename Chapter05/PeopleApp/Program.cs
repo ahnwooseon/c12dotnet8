@@ -81,3 +81,5 @@ WriteLine(format: "{0} earned {1:C} interest.",
     gerrierAccount.Balance * BankAccount.InterestRate);
 
 WriteLine($"{bob.Name} is a {Person.Species}");
+// Read-only fields are accessible via the variable.
+WriteLine($"{bob.Name} was born on {bob.HomePlanet}");
