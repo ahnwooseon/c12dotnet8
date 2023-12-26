@@ -50,5 +50,15 @@ public class Person : object
         return $"{Name} was born on {HomePlanet}.";
     }
 
+    public string SayHello()
+    {
+        return $"{Name} says 'Hello!'";
+    }
+
+    public string SayHelloTo(string name)
+    {
+        return $"{Name} says 'Hello, {name}!'";
+    }
+
     #endregion
 }

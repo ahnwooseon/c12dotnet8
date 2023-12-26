@@ -116,3 +116,6 @@ WriteLine("{0} of {1} was created at {2:hh:mm:ss} on a {2:dddd}.",
 
 bob.WriteToConsole();
 WriteLine(bob.GetOrigin());
+
+WriteLine(bob.SayHello());
+WriteLine(bob.SayHelloTo("Emily"));
