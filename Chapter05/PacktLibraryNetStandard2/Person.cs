@@ -29,5 +29,12 @@ public class Person : object
         Instantiated = DateTime.Now;
     }
 
+    public Person(string initialName, string homePlanet)
+    {
+        Name = initialName;
+        HomePlanet = homePlanet;
+        Instantiated = DateTime.Now;
+    }
+
     #endregion
 }
