@@ -144,3 +144,6 @@ WriteLine($"Before: e={e}, f={f}, g={g}, h doesn't exist yet!");
 // Simplified C# 7 or later syntax for the out parameter.
 bob.PassingParameters(e, f, ref g, out int h);
 WriteLine($"After: e={e}, f={f}, g={g}, h={h}");
+
+(string, int) fruit = bob.GetFruit();
+WriteLine($"{fruit.Item1}, {fruit.Item2} there are.");
