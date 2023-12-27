@@ -164,3 +164,6 @@ WriteLine($"{thing2.Name} has {thing2.Count} children.");
 // With an aliased tuple type.
 Fruit fruitNamed2 = bob.GetNamedFruit();
 WriteLine($"There are {fruitNamed2.Number} {fruitNamed2.Name}.");
+
+(string fruitName, int fruitNumber) = bob.GetFruit();
+WriteLine($"Deconstructed tuple: {fruitName}, {fruitNumber}");
