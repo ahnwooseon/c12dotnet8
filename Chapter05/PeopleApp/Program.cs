@@ -33,7 +33,7 @@ TimeSpan.Zero)
 WriteLine(format: "{0} was born on {1:d}.", // Short date.
     alice.Name, alice.Born);
 
-bob.FavoriteAncientWonder = WondersOfTheAncientWorld.StatueOfZeusAtOlympia;
+bob.FavoriteAncientWonder = (WondersOfTheAncientWorld)64;
 WriteLine(format: "{0}'s favorite wonder is {1}. Its integer is {2}.",
     bob.Name,
     bob.FavoriteAncientWonder,
