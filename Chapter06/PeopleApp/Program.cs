@@ -55,3 +55,20 @@ for (int i = 0; i < lamech.Children.Count; i++)
     arg0: lamech.Name, arg1: i,
     arg2: lamech.Children[i].Name);
 }
+
+// Non-generic lookup collection.
+System.Collections.Hashtable lookupObject = new();
+lookupObject.Add(1, "Alpha");
+lookupObject.Add(2, "Beta");
+lookupObject.Add(3, "Gamma");
+lookupObject.Add(key: harry, "Delta");
+
+int key = 2; // Look up the value that has 2 as its key.
+WriteLine("Key {0} has value: {1}",
+    key,
+    lookupObject[key]);
+
+// Look up the value that has harry as its key.
+WriteLine(format: "Key {0} has value: {1}",
+    harry,
+    lookupObject[harry]);
