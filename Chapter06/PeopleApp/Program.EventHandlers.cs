@@ -16,4 +16,10 @@ partial class Program
 
         WriteLine($"{p.Name} is this angry: {p.AngerLevel}.");
     }
+
+    // Another method to handle the event received by the harry object.
+    private static void Harry_Shout_2(object? sender, EventArgs e)
+    {
+        WriteLine("Stop it!");
+    }
 }
