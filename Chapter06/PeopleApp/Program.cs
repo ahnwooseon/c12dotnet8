@@ -169,3 +169,13 @@ if (aliceAsEmployee is not null)
     WriteLine($"{nameof(aliceInPerson)} as an Employee.");
     // Safely do something with aliceAsEmployee.
 }
+
+try
+{
+    john.TimeTravel(when: new(1999, 12, 31));
+    john.TimeTravel(when: new(1950, 12, 25));
+}
+catch (PersonException ex)
+{
+    WriteLine(ex.Message);
+}

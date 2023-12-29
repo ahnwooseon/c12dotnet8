@@ -189,9 +189,21 @@ public class Person : IComparable<Person?>
         return position;
     }
 
+    public void TimeTravel(DateTime when)
+    {
+        if (when <= Born)
+        {
+            throw new PersonException("If you travel back in time to a date earlier than your own birth, then the universe will explode!");
+        }
+        else
+        {
+            WriteLine($"Welcome to {when:yyyy}!");
+        }
+    }
+
     #endregion
 
-    #region Overridden methods
+#region Overridden methods
 
     public override string ToString()
     {
