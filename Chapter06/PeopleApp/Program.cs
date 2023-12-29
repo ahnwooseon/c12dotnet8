@@ -143,3 +143,12 @@ john.HireDate = new(2014, 11, 23);
 WriteLine($"{john.Name} was hired on {john.HireDate:yyyy-MM-dd}.");
 
 WriteLine(john.ToString());
+
+Employee aliceInEmployee = new()
+    { Name = "Alice", EmployeeCode = "AA123" };
+
+Person aliceInPerson = aliceInEmployee;
+aliceInEmployee.WriteToConsole();
+aliceInPerson.WriteToConsole();
+WriteLine(aliceInEmployee.ToString());
+WriteLine(aliceInPerson.ToString());
