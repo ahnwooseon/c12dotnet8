@@ -179,3 +179,12 @@ catch (PersonException ex)
 {
     WriteLine(ex.Message);
 }
+
+string email1 = "pamela@test.com";
+string email2 = "ian&test.com";
+WriteLine("{0} is a valid e-mail address: {1}",
+    email1,
+    email1.IsValidEmail());
+WriteLine("{0} is a valid e-mail address: {1}",
+    email2,
+    email2.IsValidEmail());
