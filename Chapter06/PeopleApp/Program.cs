@@ -145,7 +145,7 @@ WriteLine($"{john.Name} was hired on {john.HireDate:yyyy-MM-dd}.");
 WriteLine(john.ToString());
 
 Employee aliceInEmployee = new()
-    { Name = "Alice", EmployeeCode = "AA123" };
+{ Name = "Alice", EmployeeCode = "AA123" };
 
 Person aliceInPerson = aliceInEmployee;
 aliceInEmployee.WriteToConsole();
@@ -153,4 +153,11 @@ aliceInPerson.WriteToConsole();
 WriteLine(aliceInEmployee.ToString());
 WriteLine(aliceInPerson.ToString());
 
-Employee explicitAlice = (Employee)aliceInPerson;
+if (aliceInPerson is Employee)
+{
+    WriteLine($"{nameof(aliceInPerson)} is an Employee.");
+
+    Employee explicitAlice = (Employee)aliceInPerson;
+
+    // Safely do something with explicitAlice.
+}
