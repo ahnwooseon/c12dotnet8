@@ -1,6 +1,4 @@
-﻿using static System.Console;
-
-int numberOfApples = 12;
+﻿int numberOfApples = 12;
 decimal pricePerApple = 0.35M;
 
 Console.WriteLine(
