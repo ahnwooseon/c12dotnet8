@@ -15,6 +15,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Arguments", "Arguments\Argu
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AsyncConsole", "AsyncConsole\AsyncConsole.csproj", "{74232890-274B-4C80-87EA-919077DE79C2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ch02Ex03Numbers", "Ch02Ex03Numbers\Ch02Ex03Numbers.csproj", "{30277A87-E454-46FC-9452-A92EA67D593F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -48,5 +50,9 @@ Global
 		{74232890-274B-4C80-87EA-919077DE79C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{74232890-274B-4C80-87EA-919077DE79C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{74232890-274B-4C80-87EA-919077DE79C2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{30277A87-E454-46FC-9452-A92EA67D593F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{30277A87-E454-46FC-9452-A92EA67D593F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{30277A87-E454-46FC-9452-A92EA67D593F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{30277A87-E454-46FC-9452-A92EA67D593F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
