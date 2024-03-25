@@ -44,3 +44,23 @@ WriteLine($"p   | {p ^ p,-5} | {p ^ q,-5} ");
 WriteLine($"q   | {q ^ p,-5} | {q ^ q,-5} ");
 
 #endregion
+
+#region Exploring conditional logical operators
+
+WriteLine();
+// Note that DoStuff() returns true.
+WriteLine($"p & DoStuff() = {p & DoStuff()}");
+WriteLine($"q & DoStuff() = {q & DoStuff()}");
+
+WriteLine();
+// Note that DoStuff() returns true.
+WriteLine($"p && DoStuff() = {p && DoStuff()}");
+WriteLine($"q && DoStuff() = {q && DoStuff()}");
+
+static bool DoStuff()
+{
+    WriteLine("I am doing some stuff.");
+    return true;
+}
+
+#endregion
