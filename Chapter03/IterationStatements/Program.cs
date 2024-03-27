@@ -25,3 +25,13 @@ while (x < 10)
 // {
 //     WriteLine("Maximum number of attempts exceeded.");
 // }
+
+for (int y = 1; y <= 10; y++)
+{
+    WriteLine(y);
+}
+
+for (var y = 0; y <= 10; y += 3)
+{
+    WriteLine(y);
+}
