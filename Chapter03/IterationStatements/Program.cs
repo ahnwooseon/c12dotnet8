@@ -35,3 +35,10 @@ for (var y = 0; y <= 10; y += 3)
 {
     WriteLine(y);
 }
+
+string[] names = { "Adam", "Barry", "Charlie" };
+
+foreach (string name in names)
+{
+    WriteLine($"{name} has {name.Length} characters.");
+}
