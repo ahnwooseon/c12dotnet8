@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SelectionStatements", "Sele
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IterationStatements", "IterationStatements\IterationStatements.csproj", "{793821EA-AE37-4458-B95E-44CD7CB65765}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Arrays", "Arrays\Arrays.csproj", "{EA864AD4-F8EF-4F74-8E18-FAB5D0044B4C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -30,5 +32,9 @@ Global
 		{793821EA-AE37-4458-B95E-44CD7CB65765}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{793821EA-AE37-4458-B95E-44CD7CB65765}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{793821EA-AE37-4458-B95E-44CD7CB65765}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EA864AD4-F8EF-4F74-8E18-FAB5D0044B4C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EA864AD4-F8EF-4F74-8E18-FAB5D0044B4C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EA864AD4-F8EF-4F74-8E18-FAB5D0044B4C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EA864AD4-F8EF-4F74-8E18-FAB5D0044B4C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
