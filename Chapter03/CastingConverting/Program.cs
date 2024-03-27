@@ -1,4 +1,6 @@
-﻿int a = 10;
+﻿using static System.Convert; // To use the ToInt32 method.
+
+int a = 10;
 double b = a; // An int can be safely cast into a double.
 WriteLine($"a is {a}, b is {b}");
 
@@ -21,3 +23,7 @@ for (int i = 8; i >= -8; i--)
     WriteLine("{0,12} {0,34:B32}", i);
 }
 WriteLine("{0,12} {0,34:B32}", int.MinValue);
+
+double g = 9.8;
+int h = ToInt32(g); // A method of System.Convert.
+WriteLine($"g is {g}, h is {h}");
