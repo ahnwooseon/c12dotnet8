@@ -13,3 +13,11 @@ WriteLine($"e is {e:N0}, f is {f:N0}");
 e = 5_000_000_000;
 f = (int)e;
 WriteLine($"e is {e:N0}, f is {f:N0}");
+
+WriteLine("{0,12} {1,34}", "Decimal", "Binary");
+WriteLine("{0,12} {0,34:B32}", int.MaxValue);
+for (int i = 8; i >= -8; i--)
+{
+    WriteLine("{0,12} {0,34:B32}", i);
+}
+WriteLine("{0,12} {0,34:B32}", int.MinValue);
