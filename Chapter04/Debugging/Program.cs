@@ -8,5 +8,5 @@ ReadLine(); // Wait for user to press Enter.
 
 double Add(double a, double b)
 {
-    return a * b; // Deliberate bug!
+    return a + b; // Deliberate bug!
 }
