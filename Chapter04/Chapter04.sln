@@ -25,6 +25,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ch04Ex02PrimeFactorsLib", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ch04Ex02PrimeFactorsTests", "Ch04Ex02PrimeFactorsTests\Ch04Ex02PrimeFactorsTests.csproj", "{DA61732C-0509-4B51-97C8-E07DBFA66AB1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ch04Ex02PrimeFactorsApp", "Ch04Ex02PrimeFactorsApp\Ch04Ex02PrimeFactorsApp.csproj", "{F2DB2553-3322-4104-B1DE-ABC10D756438}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -78,5 +80,9 @@ Global
 		{DA61732C-0509-4B51-97C8-E07DBFA66AB1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DA61732C-0509-4B51-97C8-E07DBFA66AB1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DA61732C-0509-4B51-97C8-E07DBFA66AB1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F2DB2553-3322-4104-B1DE-ABC10D756438}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F2DB2553-3322-4104-B1DE-ABC10D756438}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F2DB2553-3322-4104-B1DE-ABC10D756438}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F2DB2553-3322-4104-B1DE-ABC10D756438}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

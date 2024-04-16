@@ -5,7 +5,7 @@ public class PrimeFactors
     public List<int> Factorize(int n)
     {
         ArgumentOutOfRangeException.ThrowIfNegative(n, nameof(n));
-        
+
         List<int> result = new();
 
         for (int i = 2; i <= Math.Sqrt(n); i++)
