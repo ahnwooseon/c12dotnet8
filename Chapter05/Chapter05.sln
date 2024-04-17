@@ -4,6 +4,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PacktLibraryNetStandard2", "PacktLibraryNetStandard2\PacktLibraryNetStandard2.csproj", "{ED310424-B467-423E-B998-7C364A06672D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PeopleApp", "PeopleApp\PeopleApp.csproj", "{18EF7F92-DFDD-4FEE-A986-5049554221C7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -18,5 +19,9 @@ Global
 		{ED310424-B467-423E-B998-7C364A06672D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{ED310424-B467-423E-B998-7C364A06672D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{ED310424-B467-423E-B998-7C364A06672D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{18EF7F92-DFDD-4FEE-A986-5049554221C7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{18EF7F92-DFDD-4FEE-A986-5049554221C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{18EF7F92-DFDD-4FEE-A986-5049554221C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{18EF7F92-DFDD-4FEE-A986-5049554221C7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
