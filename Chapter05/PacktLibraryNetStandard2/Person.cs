@@ -9,6 +9,7 @@ public class Person : object
     public DateTimeOffset Born;
     public WondersOfTheAncientWorld FavoriteAncientWonder;
     public WondersOfTheAncientWorld BucketList;
+    public List<Person> Children = new();
 
     #endregion
 }
