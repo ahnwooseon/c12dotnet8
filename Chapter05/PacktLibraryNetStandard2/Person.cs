@@ -3,6 +3,9 @@ namespace Packt.Shared;
 
 public class Person : object
 {
+    // Constant fields: Values that are fixed at compilation.
+    public const string Species = "Homo Sapiens";
+
     #region Fields: Data or state for this person.
 
     public string? Name; // ? means it can be null.
