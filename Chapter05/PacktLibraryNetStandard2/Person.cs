@@ -5,6 +5,8 @@ public class Person : object
 {
     // Constant fields: Values that are fixed at compilation.
     public const string Species = "Homo Sapiens";
+    // Read-only fields: Values that can be set at runtime.
+    public readonly string HomePlanet = "Earth";
 
     #region Fields: Data or state for this person.
 
