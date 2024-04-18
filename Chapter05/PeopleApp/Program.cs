@@ -22,3 +22,14 @@ bob.Born = new DateTimeOffset(
 
 WriteLine(format: "{0} was born on {1:D}.", // Long date.
     arg0: bob.Name, arg1: bob.Born);
+
+Person alice = new()
+{
+    Name = "Alice Jones",
+    Born = new(1998, 3, 7, 16, 28, 0,
+        // This is an optional offset from UTC time zone.
+        TimeSpan.Zero)
+};
+
+WriteLine(format: "{0} was born on {1:d}.", // Short date.
+    arg0: alice.Name, arg1: alice.Born);
