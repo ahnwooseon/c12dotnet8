@@ -87,3 +87,12 @@ WriteLine($"{bob.Name} is a {Person.Species}.");
 
 // Read-only fields are accessible via the variable.
 WriteLine($"{bob.Name} was born on {bob.HomePlanet}.");
+
+Book book = new()
+{
+    Isbn = "978-1803237800",
+    Title = "C# 12 and .NET 8 - Modern Cross-Platform Development Fundamentals"
+};
+
+WriteLine("{0}: {1} written by {2} has {3:N0} pages.",
+    book.Isbn, book.Title, book.Author, book.PageCount);
