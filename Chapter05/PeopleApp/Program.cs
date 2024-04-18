@@ -12,3 +12,13 @@ ConfigureConsole(); // Sets current culture to US English.
 Person bob = new(); // C# 9 or later.
 WriteLine(bob); // Implicit call to ToString().
 // WriteLine(bob.ToString()); // Does the same thing.
+
+bob.Name = "Bob Smith";
+
+bob.Born = new DateTimeOffset(
+    1965, 12, 22,
+    16, 28, 0,
+    offset: TimeSpan.FromHours(-5)); // US Eastern Standard Time.
+
+WriteLine(format: "{0} was born on {1:D}.", // Long date.
+    arg0: bob.Name, arg1: bob.Born);
