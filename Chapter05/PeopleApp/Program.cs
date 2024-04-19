@@ -96,3 +96,9 @@ Book book = new()
 
 WriteLine("{0}: {1} written by {2} has {3:N0} pages.",
     book.Isbn, book.Title, book.Author, book.PageCount);
+
+Person blankPerson = new();
+WriteLine(format: "{0} of {1} was created at {2:hh:mm:ss} on a {2:dddd}.",
+    arg0: blankPerson.Name,
+    arg1: blankPerson.HomePlanet,
+    arg2: blankPerson.Instantiated);

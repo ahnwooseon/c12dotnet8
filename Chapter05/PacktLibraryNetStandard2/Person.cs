@@ -7,6 +7,7 @@ public class Person : object
     public const string Species = "Homo Sapiens";
     // Read-only fields: Values that can be set at runtime.
     public readonly string HomePlanet = "Earth";
+    public readonly DateTime Instantiated;
 
     #region Fields: Data or state for this person.
 
@@ -15,6 +16,18 @@ public class Person : object
     public WondersOfTheAncientWorld FavoriteAncientWonder;
     public WondersOfTheAncientWorld BucketList;
     public List<Person> Children = new();
+
+    #endregion
+
+    #region Constructors: Called when using new to instantiate a type.
+
+    public Person()
+    {
+        // Constructors can set default values for fields
+        // including any read-only fields like Instantiated.
+        Name = "Unknown";
+        Instantiated = DateTime.Now;
+    }
 
     #endregion
 }
