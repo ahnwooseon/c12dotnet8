@@ -118,3 +118,6 @@ WriteLine(format: "{0} of {1} was created at {2:hh:mm:ss} on a {2:dddd}.",
     arg0: gunny.Name,
     arg1: gunny.HomePlanet,
     arg2: gunny.Instantiated);
+
+bob.WriteToConsole();
+WriteLine(bob.GetOrigin());
