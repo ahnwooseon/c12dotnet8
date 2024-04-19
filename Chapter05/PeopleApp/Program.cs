@@ -88,10 +88,19 @@ WriteLine($"{bob.Name} is a {Person.Species}.");
 // Read-only fields are accessible via the variable.
 WriteLine($"{bob.Name} was born on {bob.HomePlanet}.");
 
+/*
+// Instantiate a book using object initializer syntax.
 Book book = new()
 {
     Isbn = "978-1803237800",
     Title = "C# 12 and .NET 8 - Modern Cross-Platform Development Fundamentals"
+};
+*/
+Book book = new(isbn: "978-1803237800",
+    title: "C# 12 and .NET 8 - Modern Cross-Platform Development Fundamentals")
+{
+    Author = "Mark J. Price",
+    PageCount = 821
 };
 
 WriteLine("{0}: {1} written by {2} has {3:N0} pages.",
