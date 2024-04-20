@@ -165,3 +165,15 @@ WriteLine($"Deconstructed person: {name1}, {dob1}");
 
 var (name2, dob2, fav2) = bob;
 WriteLine($"Deconstructed person: {name2}, {dob2}, {fav2}");
+
+// Change to -1 to make the exception handling code execute.
+int number = -1;
+
+try
+{
+    WriteLine($"{number}! is {Person.Factorial(number)}");
+}
+catch (Exception ex)
+{
+    WriteLine($"{ex.GetType()} says: {ex.Message} number was {number}.");
+}

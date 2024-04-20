@@ -113,5 +113,22 @@ public class Person : object
         fav = FavoriteAncientWonder;
     }
 
+    // Method with a local function.
+    public static int Factorial(int number)
+    {
+        if (number < 0)
+        {
+            throw new ArgumentException(
+              $"{nameof(number)} cannot be less than zero.");
+        }
+        return localFactorial(number);
+
+        int localFactorial(int localNumber) // Local function.
+        {
+            if (localNumber == 0) return 1;
+            return localNumber * localFactorial(localNumber - 1);
+        }
+    }
+
     #endregion
 }
