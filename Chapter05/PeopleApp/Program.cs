@@ -139,3 +139,6 @@ WriteLine($"Before: a={a}, b={b}, c={c}, d={d}");
 bob.PassingParameters(a, b, ref c, out d);
 
 WriteLine($"After: a={a}, b={b}, c={c}, d={d}");
+
+(string, int) fruit = bob.GetFruit();
+WriteLine($"{fruit.Item1}, {fruit.Item2} there are.");

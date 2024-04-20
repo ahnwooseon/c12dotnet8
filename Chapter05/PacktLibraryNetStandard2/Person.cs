@@ -83,5 +83,11 @@ public class Person : object
         WriteLine($"In the method: w={w}, x={x}, y={y}, z={z}");
     }
 
+    // Method that returns a tuple: (string, int).
+    public (string, int) GetFruit()
+    {
+        return ("Apples", 5);
+    }
+
     #endregion
 }
