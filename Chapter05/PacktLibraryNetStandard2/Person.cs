@@ -95,5 +95,23 @@ public class Person : object
         return (Name: "Apples", Number: 5);
     }
 
+    // Deconstructors: Break down this object into parts.
+
+    public void Deconstruct(out string? name,
+      out DateTimeOffset dob)
+    {
+        name = Name;
+        dob = Born;
+    }
+
+    public void Deconstruct(out string? name,
+      out DateTimeOffset dob,
+      out WondersOfTheAncientWorld fav)
+    {
+        name = Name;
+        dob = Born;
+        fav = FavoriteAncientWonder;
+    }
+
     #endregion
 }

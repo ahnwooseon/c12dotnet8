@@ -159,3 +159,9 @@ WriteLine($"{thing2.Name} has {thing2.Count} children.");
 
 (string fruitName, int fruitNumber) = bob.GetFruit();
 WriteLine($"Deconstructed tuple: {fruitName}, {fruitNumber}");
+
+var (name1, dob1) = bob; // Implicitly calls the Deconstruct method.
+WriteLine($"Deconstructed person: {name1}, {dob1}");
+
+var (name2, dob2, fav2) = bob;
+WriteLine($"Deconstructed person: {name2}, {dob2}, {fav2}");
