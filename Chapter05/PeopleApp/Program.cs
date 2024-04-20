@@ -1,4 +1,5 @@
 ﻿using Packt.Shared; // To use Person.
+using Fruit = (string Name, int Number); // Aliasing a tuple type.
 
 ConfigureConsole(); // Sets current culture to US English.
 
@@ -143,7 +144,11 @@ WriteLine($"After: a={a}, b={b}, c={c}, d={d}");
 (string, int) fruit = bob.GetFruit();
 WriteLine($"{fruit.Item1}, {fruit.Item2} there are.");
 
-var fruitNamed = bob.GetNamedFruit();
+// Without an aliased tuple type.
+//var fruitNamed = bob.GetNamedFruit();
+
+// With an aliased tuple type.
+Fruit fruitNamed = bob.GetNamedFruit();
 WriteLine($"There are {fruitNamed.Number} {fruitNamed.Name}.");
 
 var thing1 = ("Neville", 4);
