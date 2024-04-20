@@ -128,3 +128,14 @@ WriteLine(bob.OptionalParameters(3));
 WriteLine(bob.OptionalParameters(3, "Jump!", 98.5));
 WriteLine(bob.OptionalParameters(3, number: 52.7, command: "Hide!"));
 WriteLine(bob.OptionalParameters(3, "Poke!", active: false));
+
+int a = 10;
+int b = 20;
+int c = 30;
+int d = 40;
+
+WriteLine($"Before: a={a}, b={b}, c={c}, d={d}");
+
+bob.PassingParameters(a, b, ref c, out d);
+
+WriteLine($"After: a={a}, b={b}, c={c}, d={d}");
