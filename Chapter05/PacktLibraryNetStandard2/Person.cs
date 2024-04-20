@@ -60,7 +60,7 @@ public class Person : object
         return $"{Name} says 'Hello, {name}!'";
     }
 
-    public string OptionalParameters(string command = "Run!",
+    public string OptionalParameters(int count, string command = "Run!",
         double number = 0.0, bool active = true)
     {
         return string.Format("command is {0}, number is {1}, active is {2}",

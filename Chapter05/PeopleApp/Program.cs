@@ -124,7 +124,7 @@ WriteLine(bob.GetOrigin());
 WriteLine(bob.SayHello());
 WriteLine(bob.SayHello("Emily"));
 
-WriteLine(bob.OptionalParameters());
-WriteLine(bob.OptionalParameters("Jump!", 98.5));
-WriteLine(bob.OptionalParameters(number: 52.7, command: "Hide!"));
-WriteLine(bob.OptionalParameters("Poke!", active: false));
+WriteLine(bob.OptionalParameters(3));
+WriteLine(bob.OptionalParameters(3, "Jump!", 98.5));
+WriteLine(bob.OptionalParameters(3, number: 52.7, command: "Hide!"));
+WriteLine(bob.OptionalParameters(3, "Poke!", active: false));
