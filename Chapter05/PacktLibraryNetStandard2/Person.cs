@@ -1,7 +1,7 @@
 // All types in this file will be defined in this file-scoped namespace.
 namespace Packt.Shared;
 
-public class Person : object
+public partial class Person : object
 {
     // Constant fields: Values that are fixed at compilation.
     public const string Species = "Homo Sapiens";
