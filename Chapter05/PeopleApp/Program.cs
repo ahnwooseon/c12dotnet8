@@ -225,3 +225,27 @@ WriteLine($"Sam's second child is {sam[1].Name}.");
 
 // Get using the string indexer.
 WriteLine($"Sam's child named Ella is {sam["Ella"].Age} years old.");
+
+// An array containing a mix of passenger types.
+Passenger[] passengers = {
+  new FirstClassPassenger { AirMiles = 1_419, Name = "Suman" },
+  new FirstClassPassenger { AirMiles = 16_562, Name = "Lucy" },
+  new BusinessClassPassenger { Name = "Janice" },
+  new CoachClassPassenger { CarryOnKG = 25.7, Name = "Dave" },
+  new CoachClassPassenger { CarryOnKG = 0, Name = "Amit" },
+};
+
+foreach (Passenger passenger in passengers)
+{
+    decimal flightCost = passenger switch
+    {
+        FirstClassPassenger p when p.AirMiles > 35_000 => 1_500M,
+        FirstClassPassenger p when p.AirMiles > 15_000 => 1_750M,
+        FirstClassPassenger _                          => 2_000M,
+        BusinessClassPassenger _                       => 1_000M,
+        CoachClassPassenger p when p.CarryOnKG < 10.0  => 500M,
+        CoachClassPassenger _                          => 650M,
+        _                                              => 800M
+    };
+    WriteLine($"Flight costs {flightCost:C} for {passenger}");
+}
