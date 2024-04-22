@@ -285,3 +285,7 @@ AnimalRecord ar1 = new() { Name = "Rex" };
 AnimalRecord ar2 = new() { Name = "Rex" };
 
 WriteLine($"ar1 == ar2: {ar1 == ar2}");
+
+ImmutableAnimal oscar = new("Oscar", "Labrador");
+var (who, what) = oscar; // Calls the Deconstruct method.
+WriteLine($"{who} is a {what}.");
