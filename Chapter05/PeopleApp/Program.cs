@@ -249,12 +249,19 @@ foreach (Passenger passenger in passengers)
         {
             > 35_000 => 1_500M,
             > 15_000 => 1_750M,
-            _        => 2_000M
+            _ => 2_000M
         },
-        BusinessClassPassenger _                       => 1_000M,
-        CoachClassPassenger p when p.CarryOnKG < 10.0  => 500M,
-        CoachClassPassenger _                          => 650M,
-        _                                              => 800M
+        BusinessClassPassenger _ => 1_000M,
+        CoachClassPassenger p when p.CarryOnKG < 10.0 => 500M,
+        CoachClassPassenger _ => 650M,
+        _ => 800M
     };
     WriteLine($"Flight costs {flightCost:C} for {passenger}");
 }
+
+ImmutablePerson jeff = new()
+{
+    FirstName = "Jeff",
+    LastName = "Winger"
+};
+//jeff.FirstName = "Geoff";
