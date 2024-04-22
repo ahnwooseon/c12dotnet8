@@ -275,3 +275,13 @@ ImmutableVehicle car = new()
 ImmutableVehicle repaintedCar = car with { Color = "Polymetal Grey Metallic" };
 WriteLine($"Original car color was {car.Color}.");
 WriteLine($"New car color is {repaintedCar.Color}.");
+
+AnimalClass ac1 = new() { Name = "Rex" };
+AnimalClass ac2 = new() { Name = "Rex" };
+
+WriteLine($"ac1 == ac2: {ac1 == ac2}");
+
+AnimalRecord ar1 = new() { Name = "Rex" };
+AnimalRecord ar2 = new() { Name = "Rex" };
+
+WriteLine($"ar1 == ar2: {ar1 == ar2}");
