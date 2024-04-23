@@ -107,4 +107,24 @@ public class Person
     }
 
     #endregion
+
+    #region Operators
+
+    // Define the + operator to "marry".
+    public static bool operator +(Person p1, Person p2)
+    {
+        Marry(p1, p2);
+
+        // Confirm they are both now married.
+        return p1.Married && p2.Married;
+    }
+
+    // Define the * operator to "multiply".
+    public static Person operator *(Person p1, Person p2)
+    {
+        // Return a reference to the baby that results from multiplying.
+        return Procreate(p1, p2);
+    }
+    
+    #endregion
 }
