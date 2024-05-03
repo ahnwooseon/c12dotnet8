@@ -1,6 +1,6 @@
 ﻿namespace Packt.Shared;
 
-public class Person
+public class Person : IComparable<Person?>
 {
     #region Properties
 
@@ -139,7 +139,7 @@ public class Person
     public void Poke()
     {
         AngerLevel++;
-        
+
         if (AngerLevel < 3) return;
         // If something is listening to the event...
         if (Shout is not null)
@@ -150,4 +150,40 @@ public class Person
     }
 
     #endregion
+
+    public int CompareTo(Person? other)
+    {
+        int position;
+
+        if (other is not null)
+        {
+            if (Name is not null && other.Name is not null)
+            {
+                // If both Name values are not null, then use the string implementation of CompareTo.
+                position = Name.CompareTo(other.Name);
+            }
+            else if (Name is not null && other.Name is null)
+            {
+                position = -1; // this Person precedes other Person.
+            }
+            else if (Name is null && other.Name is not null)
+            {
+                position = 1; // this Person follows other Person.
+            }
+            else
+            {
+                position = 0; // this and other are at same position.
+            }
+        }
+        else if (other is null)
+        {
+            position = -1; // this Person precedes other Person.
+        }
+        else
+        {
+            position = 0; // this and other are at same position.
+        }
+
+        return position;
+    }
 }
