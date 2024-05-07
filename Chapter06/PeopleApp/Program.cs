@@ -168,3 +168,5 @@ aliceInEmployee.WriteToConsole();
 aliceInPerson.WriteToConsole();
 WriteLine(aliceInEmployee.ToString());
 WriteLine(aliceInPerson.ToString());
+
+Employee explicitAlice = (Employee) aliceInPerson;
