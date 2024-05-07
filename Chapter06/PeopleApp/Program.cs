@@ -177,3 +177,12 @@ if (aliceInPerson is Employee)
 
     // Safely do something with explicitAlice.
 }
+
+Employee? aliceAsEmployee = aliceInPerson as Employee;
+
+if (aliceAsEmployee is not null)
+{
+    WriteLine($"{nameof(aliceInPerson)} as an Employee.");
+
+    // Safely do something with aliceAsEmployee..
+}
