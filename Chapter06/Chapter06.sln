@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PeopleApp", "PeopleApp\Peop
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NullHandling", "NullHandling\NullHandling.csproj", "{CE370653-606F-4308-A7A7-003CADA1AF37}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ch06Ex02Inheritance", "Ch06Ex02Inheritance\Ch06Ex02Inheritance.csproj", "{BF29A167-8F42-496E-8877-CA18E37A21BD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -30,5 +32,9 @@ Global
 		{CE370653-606F-4308-A7A7-003CADA1AF37}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CE370653-606F-4308-A7A7-003CADA1AF37}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CE370653-606F-4308-A7A7-003CADA1AF37}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BF29A167-8F42-496E-8877-CA18E37A21BD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BF29A167-8F42-496E-8877-CA18E37A21BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BF29A167-8F42-496E-8877-CA18E37A21BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BF29A167-8F42-496E-8877-CA18E37A21BD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
