@@ -1,8 +1,8 @@
 using System.Text.RegularExpressions; // To use Regex. namespace Packt.Shared;
 
-public class StringExtensions
+public static class StringExtensions
 {
-    public static bool IsValidEmail(string input)
+    public static bool IsValidEmail(this string input)
     {
         // Use a simple regular expression to check
         // that the input string is a valid email.
