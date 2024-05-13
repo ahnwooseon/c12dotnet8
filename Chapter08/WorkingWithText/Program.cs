@@ -1,4 +1,8 @@
-﻿string city = "London";
+﻿using System.Globalization; // To use CultureInfo
+
+OutputEncoding = System.Text.Encoding.UTF8; // Enable Euro symbol
+
+string city = "London";
 WriteLine($"{city} is {city.Length} characters long.");
 
 WriteLine($"First char is {city[0]} and fourth is {city[3]}.");
@@ -30,3 +34,19 @@ WriteLine($"Text: {company}");
 WriteLine(format: "Starts with M: {0}, contains an N: {1}",
     arg0: company.StartsWith("M"),
     arg1: company.Contains("N"));
+
+CultureInfo.CurrentCulture = CultureInfo.GetCultureInfo("en-US");
+
+string text1 = "Mark";
+string text2 = "MARK";
+
+WriteLine($"text1: {text1}, text2: {text2}");
+
+WriteLine("Compare: {0}.", string.Compare(text1, text2));
+
+WriteLine(format: "Compare (ignoreCase): {0}.",
+    string.Compare(text1, text2, ignoreCase: true));
+
+WriteLine(format: "Compare (InvariantCultureIgnoreCase): {0}.",
+    string.Compare(text1, text2,
+    StringComparison.InvariantCultureIgnoreCase));
