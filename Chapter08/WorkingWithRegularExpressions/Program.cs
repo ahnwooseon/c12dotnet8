@@ -2,7 +2,7 @@
 
 Write("Enter your age: ");
 string input = ReadLine()!; // Null-forgiving operator.
-Regex ageChecker = new(@"^\d+$");
+Regex ageChecker = DigitsOnly();
 WriteLine(ageChecker.IsMatch(input) ? "Thank you!" : $"This is not a valid age: {input}");
 
 // C# 1 to 10: Use escaped double-quote characters \"
@@ -23,7 +23,7 @@ foreach (string film in filmsDumb)
     WriteLine($"  {film}");
 }
 
-Regex csv = new("(?:^|,)(?=[^\"]|(\")?)\"?((?(1)[^\"]*|[^,\"]*))\"?(?=,|$)");
+Regex csv = CommaSeparator();
 
 MatchCollection filmsSmart = csv.Matches(films);
 
