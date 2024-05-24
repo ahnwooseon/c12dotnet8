@@ -1,4 +1,7 @@
-﻿// Define an alias for a dictionary with string key and string value.
+﻿using System.Collections.Immutable; // To use ImmutableDictionary<T, T>
+using System.Collections.Frozen; // To use FrozenDictionary<T, T>
+
+// Define an alias for a dictionary with string key and string value.
 using StringDictionary = System.Collections.Generic.Dictionary<string, string>;
 
 // Simple syntax for creating a list and adding three items.
@@ -119,3 +122,24 @@ vaccine.Enqueue("Mark", 2);
 
 WriteLine($"{vaccine.Peek()} will be next to be vaccinated.");
 OutputPQ("Current queue for vaccination", vaccine.UnorderedItems);
+
+//UseDictionary(keywords);
+//UseDictionary(keywords.AsReadOnly());
+UseDictionary(keywords.ToImmutableDictionary());
+
+ImmutableDictionary<string, string> immutableKeywords = keywords.ToImmutableDictionary();
+
+// Call the Add method with a return value.
+ImmutableDictionary<string, string> newDictionary = immutableKeywords.Add(
+    key: Guid.NewGuid().ToString(),
+    value: Guid.NewGuid().ToString());
+OutputCollection("Immutable keywords dictionary", immutableKeywords);
+OutputCollection("New keywords dictionary", newDictionary);
+
+// Creating a frozen collection has an overhead to perform the // sometimes complex optimizations.
+FrozenDictionary<string, string> frozenKeywords = keywords.ToFrozenDictionary();
+
+OutputCollection("Frozen keywords dictionary", frozenKeywords);
+
+// Lookups are faster in a frozen dictionary.
+WriteLine($"Define long: {frozenKeywords["long"]}");
