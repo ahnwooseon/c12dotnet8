@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorkingWithCollections", "W
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorkingWithRanges", "WorkingWithRanges\WorkingWithRanges.csproj", "{4F84FF6F-35B2-4479-9AFC-EEFB0DD22285}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ch08Ex02RegularExpressions", "Ch08Ex02RegularExpressions\Ch08Ex02RegularExpressions.csproj", "{F5E38825-2072-4AD5-8F9F-FEDD527C9DE8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -42,5 +44,9 @@ Global
 		{4F84FF6F-35B2-4479-9AFC-EEFB0DD22285}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4F84FF6F-35B2-4479-9AFC-EEFB0DD22285}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4F84FF6F-35B2-4479-9AFC-EEFB0DD22285}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F5E38825-2072-4AD5-8F9F-FEDD527C9DE8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F5E38825-2072-4AD5-8F9F-FEDD527C9DE8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F5E38825-2072-4AD5-8F9F-FEDD527C9DE8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F5E38825-2072-4AD5-8F9F-FEDD527C9DE8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
