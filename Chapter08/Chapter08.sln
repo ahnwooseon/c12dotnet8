@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorkingWithText", "WorkingW
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorkingWithRegularExpressions", "WorkingWithRegularExpressions\WorkingWithRegularExpressions.csproj", "{DFFB7ED2-48D5-4110-9412-F6BCE725DABF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorkingWithCollections", "WorkingWithCollections\WorkingWithCollections.csproj", "{BF1CC0F5-1DDC-4EF5-BB64-F2CEFBEF0AD2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -30,5 +32,9 @@ Global
 		{DFFB7ED2-48D5-4110-9412-F6BCE725DABF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DFFB7ED2-48D5-4110-9412-F6BCE725DABF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DFFB7ED2-48D5-4110-9412-F6BCE725DABF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BF1CC0F5-1DDC-4EF5-BB64-F2CEFBEF0AD2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BF1CC0F5-1DDC-4EF5-BB64-F2CEFBEF0AD2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BF1CC0F5-1DDC-4EF5-BB64-F2CEFBEF0AD2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BF1CC0F5-1DDC-4EF5-BB64-F2CEFBEF0AD2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
