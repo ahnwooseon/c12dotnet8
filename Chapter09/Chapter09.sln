@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorkingWithStreams", "Worki
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorkingWithRandomAccess", "WorkingWithRandomAccess\WorkingWithRandomAccess.csproj", "{9578227C-5B91-4626-8D0D-2D8B17B8360D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorkingWithEncodings", "WorkingWithEncodings\WorkingWithEncodings.csproj", "{BD33871F-0D01-4E8E-AA88-83E5BA963542}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -30,5 +32,9 @@ Global
 		{9578227C-5B91-4626-8D0D-2D8B17B8360D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9578227C-5B91-4626-8D0D-2D8B17B8360D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9578227C-5B91-4626-8D0D-2D8B17B8360D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BD33871F-0D01-4E8E-AA88-83E5BA963542}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BD33871F-0D01-4E8E-AA88-83E5BA963542}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BD33871F-0D01-4E8E-AA88-83E5BA963542}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BD33871F-0D01-4E8E-AA88-83E5BA963542}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
